@@ -34,17 +34,7 @@ let months = [
 let month = months[now.getMonth()];
 monday.innerHTML = `${day} ${month} ${date}th ${year}, ${hours}:${minutes}`;
 
-function search(event) {
-  event.preventDefault();
-  let searchInput = document.querySelector(".searchbox");
-
-  let country = document.querySelector("#country");
-  country.innerHTML = `${searchInput.value}`;
-}
-
-let form = document.querySelector("form");
-form.addEventListener("submit", search);
-
+//here
 let apiKey = "190152064d2b31379030a729490bb67f";
 let apiUrl =
   "https://api.openweathermap.org/data/2.5/weather?q=London&units=metric";
